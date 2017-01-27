@@ -29,6 +29,10 @@ public class Assert {
     protected Assert() {
     }
 
+    public static void assertDevConf(String actual) {
+        assertEquals("Not the right conference!!!", "Hello DevConf!", actual);
+    }
+
     /**
      * Asserts that a condition is true. If it isn't it throws an
      * {@link AssertionError} with the given message.
